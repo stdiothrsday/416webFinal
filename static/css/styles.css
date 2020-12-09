@@ -1,9 +1,10 @@
 body{
-    background-color: black;
+    background-color: lightgoldenrodyellow;
     padding-top: 50px;
-    color: black;
+    color: floralwhite;
     font-family: 'Sansita Swashed', cursive;
 }
+
 .asteriskField{
     display: none;
 }
