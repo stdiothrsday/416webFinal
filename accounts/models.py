@@ -10,33 +10,3 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.first_name
-
-
-class Intro(models.Model):
-    Male = 'M'
-    Female = 'F'
-    Both = 'M/F'
-    CHOICE_IN_PREFERENCE = [
-        (Male, 'M'),
-        (Female, 'F'),
-        (Both, 'M/F'),
-    ]
-    preference = models.CharField(
-        max_length=3,
-        choices=CHOICE_IN_PREFERENCE,
-
-    )
-    interests = models.CharField(max_length=200)
-    bio_message = models.TextField()
-
-    def __str__(self):
-        return self.preference
-
-
-class About(models.Model):
-    age = models.IntegerField()
-    height = models.IntegerField()
-    location = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.location
